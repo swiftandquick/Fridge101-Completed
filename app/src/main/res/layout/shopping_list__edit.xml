@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ShoppingList_Edit">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/placeholder_picture"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select or Capture Image"
+        android:layout_below="@id/iv"/>
+
+    <GridLayout
+        android:id="@+id/gl_1st_row"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:columnCount="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn" >
+
+        <GridLayout
+            android:id="@+id/gl_1st_row_left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:columnCount="4"
+            android:layout_gravity="left" >
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Name:  " />
+
+            <EditText
+                android:id="@+id/et_item_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:inputType="text" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/gl_1st_row_right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:columnCount="2"
+            android:layout_gravity="right" >
+
+            <TextView
+                android:id="@+id/tv_item_quantity"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Quantity:  " />
+
+            <EditText
+                android:id="@+id/et_item_quantity"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxLength="2"
+                android:inputType="number" />
+        </GridLayout>
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl_2nd_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_below="@id/gl_1st_row"
+        android:layout_gravity="left" >
+
+        <TextView
+            android:id="@+id/tv_expiration_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expired Date (YYYY-MM-DD):  " />
+
+        <EditText
+            android:id="@+id/et_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_slash_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"/>
+
+        <EditText
+            android:id="@+id/et_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_slash_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"/>
+
+        <EditText
+            android:id="@+id/et_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2"
+            android:inputType="number" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl_3rd_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_below="@id/gl_2nd_row"
+        android:layout_gravity="left" >
+
+        <TextView
+            android:id="@+id/tv_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification:  " />
+
+        <EditText
+            android:id="@+id/et_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_warning_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" days before expiration date.  " />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl_4th_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_below="@id/gl_3rd_row"
+        android:layout_gravity="left" >
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Note:  " />
+
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl_5th_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:layout_below="@id/gl_4th_row" >
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category:  "
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/s_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where?  "
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/s_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl_last_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/b_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:layout_marginEnd="20dp" />
+
+        <Button
+            android:id="@+id/b_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+
+    </GridLayout>
+
+</RelativeLayout>

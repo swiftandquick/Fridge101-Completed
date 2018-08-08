@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Fridge101</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_refridgerator__bottom">Refridgerator</string>
+    <string name="title_activity_tab2_summary__bottom">Tab2Summary</string>
+
+    <string-array name="fridge_category">
+        <item>All Items</item>
+        <item>Vegetable</item>
+        <item>Fruit</item>
+        <item>Grain</item>
+        <item>Meat</item>
+        <item>Drink</item>
+        <item>Other Food</item>
+        <item>Non-Food</item>
+    </string-array>
+
+</resources>

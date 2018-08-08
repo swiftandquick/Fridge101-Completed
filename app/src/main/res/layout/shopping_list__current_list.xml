@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ShoppingList_CurrentList" >
+
+    <TextView
+        android:id="@+id/tv_message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Shopping List"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is your current shopping list, you can edit and remove items here.  "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_message1" />
+
+    <GridLayout
+        android:id="@+id/gl_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_below="@id/tv_instruction"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Item" />
+
+        <TextView
+            android:id="@+id/tv_expiration_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Expiration Date" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl_1st_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gl_top_bar"
+        android:layout_centerHorizontal="true" >
+
+        <GridLayout
+            android:id="@+id/inside1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:columnCount="3">
+
+            <CheckBox
+                android:id="@+id/cb_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_pic1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/tv_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/inside2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:columnCount="2">
+
+            <TextView
+                android:id="@+id/tv_expiration_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/b_edit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit" />
+
+        </GridLayout>
+
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@+id/gl_1st_item">
+
+    </ListView>
+
+    <GridLayout
+        android:id="@+id/gl_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+
+    </GridLayout>
+
+</RelativeLayout>

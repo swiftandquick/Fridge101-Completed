@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/inside1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:columnCount="3">
+
+            <CheckBox
+                android:id="@+id/cb_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_pic1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/tv_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name" />
+            <TextView
+                android:id="@+id/tv_expiration_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/inside2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:columnCount="2">
+
+
+        </GridLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spinner_items">
+        <item >All Items</item>
+        <item >Grain</item>
+        <item >Fruit</item>
+        <item >Vegetable</item>
+        <item >Meat</item>
+        <item >Drink</item>
+        <item >Other Food</item>
+        <item >Non Food</item>
+    </array>
+    <array name="spinner_items2">
+        <item >All Items</item>
+        <item >Grain</item>
+        <item >Fruit</item>
+        <item >Vegetable</item>
+        <item >Meat</item>
+        <item >Drink</item>
+        <item >Other Food</item>
+        <item >Non Food</item>
+    </array>
+</resources>

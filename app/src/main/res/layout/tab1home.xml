@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/refridgerator_freezer_compartment_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/refrigerator_freezer_compartment"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/refridgerator_bottom_compartment_2a"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refridgerator_freezer_compartment_2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/refridgerator_bottom_compartment_2"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/refridgerator_bottom_compartment_2b"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refridgerator_bottom_compartment_2a"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/refridgerator_bottom_compartment_2"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/refridgerator_bottom_compartment_2c"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refridgerator_bottom_compartment_2b"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/refridgerator_bottom_compartment_2"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_add_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        android:text="Add"/>
+
+    <Button
+        android:id="@+id/btn_edit_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_add_2"
+        android:text="Edit"/>
+
+
+</RelativeLayout>
